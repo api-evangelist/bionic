@@ -1,21 +1,48 @@
 aid: bionic
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bionic.png
 name: Bionic
-description: 'Bionic is a company surfaced as a portfolio company of insight-partners and added to the
-  API Evangelist network as a stub for enrichment. Sector: cybersecurity. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Bionic was the pioneer of Application Security Posture Management (ASPM),
+  offering a platform that mapped application architecture, services, and data flows
+  in production without requiring source-code access or repository integration, in order
+  to eliminate vulnerability noise and prioritize business-critical risk. CrowdStrike
+  announced its acquisition of Bionic on September 19, 2023 (estimated $350M) and folded
+  the technology into Falcon Cloud Security as its ASPM capability. The bionic.ai domain
+  now wildcard-redirects to CrowdStrike; Bionic no longer maintains an independent developer
+  portal, API, or documentation surface. This profile is retained as an acquired-company
+  lead in the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/bionic/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - insight-partners
+x-status: acquired
+x-acquired-by: crowdstrike
+x-acquired-date: '2023-09-19'
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Cybersecurity
+- Cloud Security
+- Application Security
+- ASPM
+- CNAPP
+- Vulnerability Management
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +50,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/bionic-domain-security.yml
 - type: Website
   url: https://bionic.ai/about/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
