@@ -21,6 +21,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'https://bionic.ai/about/', status: 301, note: 'declared website redirects to https://www.crowdstrike.com/en-us/about-us/?ref=https://bionic.ai/about/ — a different registrable domain (bionic.ai -> crowdstrike.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bionic.png
 name: Bionic
 description: 'Bionic was the pioneer of Application Security Posture Management (ASPM),
